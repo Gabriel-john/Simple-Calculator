@@ -1,0 +1,136 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   background-color: #000000;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.15'%3E%3Ccircle fill='%23000000' cx='50' cy='0' r='50'/%3E%3Cg fill='%23151515' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e1e1e' cx='50' cy='100' r='50'/%3E%3Cg fill='%23242424' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%232a2a2a' cx='50' cy='200' r='50'/%3E%3Cg fill='%232f2f2f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23333333' cx='50' cy='300' r='50'/%3E%3Cg fill='%23383838' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b3b3b' cx='50' cy='400' r='50'/%3E%3Cg fill='%233f3f3f' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23424242' cx='50' cy='500' r='50'/%3E%3Cg fill='%23464646' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23494949' cx='50' cy='600' r='50'/%3E%3Cg fill='%234c4c4c' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%234f4f4f' cx='50' cy='700' r='50'/%3E%3Cg fill='%23515151' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23545454' cx='50' cy='800' r='50'/%3E%3Cg fill='%23575757' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23595959' cx='50' cy='900' r='50'/%3E%3Cg fill='%235c5c5c' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%235E5E5E' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+   background-attachment: fixed;
+   background-size: contain;
+}
+
+@font-face {
+   font-family: 'Calculator';
+   src: url('./font/Calculator.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+.flexCenter {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.flexCol {
+   flex-direction: column;
+}
+.flexRow {
+   flex-direction: row;
+}
+
+.gapCol {
+   gap: 5px;
+}
+
+main {
+   width: 100%;
+   height: 100%;
+}
+
+.calculator {
+   width: 320px;
+   height: 480px;
+   gap: 20px;
+   border-radius: 12px;
+   background-color: rgba(78, 78, 78, 0.849);
+}
+
+.display {
+   width: 100%;
+   padding: 0px 10px;
+}
+
+input {
+   width: 100%;
+   height: 50px;
+   border-radius: 5px;
+   border: 2px solid gray;
+   padding: 0px 10px;
+   font-size: 35px;
+   font-family: 'Calculator';
+}
+
+.menu {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   gap: 10px;
+   padding: 0px 10px;
+}
+
+.btnC {
+   width: 80px;
+   height: 80px;
+   background-color: rgb(22, 226, 158);
+   border: 2px solid gray;
+   border-radius: 50px;
+   cursor: pointer;
+}
+.btnC:hover {
+   background-color: rgb(114, 243, 200);
+}
+.btnC:active {
+   transform: scale(0.95);
+}
+
+.btnM {
+   width: 60px;
+   height: 15px;
+   background-color: yellow;
+   border: 2px solid gray;
+   border-radius: 50%;
+}
+
+.keys {
+   gap: 10px;
+}
+
+.left {
+   gap: 10px;
+}
+
+.btnKeys {
+   width: 70px;
+   height: 50px;
+   color: white;
+   background-color: rgb(37, 37, 37);
+   border: 1px solid gray;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.btnKeys:hover {
+   background-color: rgb(66, 66, 66);
+}
+.btnKeys:active {
+   transform: scale(0.95);
+}
+
+.igual {
+   width: 70px;
+   height: 108px;
+   background-color: greenyellow;
+   border: 1px solid gray;
+   border-radius: 5px;
+}
+.igual:hover {
+   background-color: rgb(194, 255, 103);
+}
+.igual:active {
+   transform: scale(0.95);
+}

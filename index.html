@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./assets/style.css" />
+      <title>Simple Calculator</title>
+   </head>
+   <body class="flexCenter">
+      <main class="flexCenter">
+         <section class="calculator flexCenter flexCol">
+            <div class="display">
+               <input id="screen" readonly />
+            </div>
+
+            <div class="menu flexRow">
+               <button class="btnC" id="btnClean">C</button>
+
+               <button class="btnM">.</button>
+               <button class="btnM">.</button>
+               <button class="btnM">.</button>
+            </div>
+
+            <div class="keys flexCenter flexRow">
+               <div class="left flexCenter flexRow">
+                  <div class="col1 flexCenter flexCol gapCol">
+                     <button class="btnKeys">ಠ_ಠ</button>
+                     <button class="btnKeys" onclick="inputKey('7')">7</button>
+                     <button class="btnKeys" onclick="inputKey('4')">4</button>
+                     <button class="btnKeys" onclick="inputKey('1')">1</button>
+                     <button class="btnKeys" onclick="inputKey('0')">0</button>
+                  </div>
+                  <div class="col2 flexCenter flexCol gapCol">
+                     <button class="btnKeys">ʕ•ᴥ•ʔ</button>
+                     <button class="btnKeys" onclick="inputKey('8')">8</button>
+                     <button class="btnKeys" onclick="inputKey('5')">5</button>
+                     <button class="btnKeys" onclick="inputKey('2')">2</button>
+                     <button class="btnKeys" onclick="inputKey('.')">,</button>
+                  </div>
+                  <div class="col3 flexCenter flexCol gapCol">
+                     <button class="btnKeys">(ง'̀-'́)ง</button>
+                     <button class="btnKeys" onclick="inputKey('9')">9</button>
+                     <button class="btnKeys" onclick="inputKey('6')">6</button>
+                     <button class="btnKeys" onclick="inputKey('3')">3</button>
+                     <button class="btnKeys" onclick="inputKey('+')">+</button>
+                  </div>
+               </div>
+
+               <div class="right">
+                  <div class="col4 flexCenter flexCol gapCol">
+                     <button class="btnKeys" onclick="inputKey('/')">/</button>
+                     <button class="btnKeys" onclick="inputKey('*')">X</button>
+                     <button class="btnKeys" onclick="inputKey('-')">-</button>
+                     <button class="igual" onclick="calculate()">=</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <script src="./js/script.js"></script>
+   </body>
+</html>
